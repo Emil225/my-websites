@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information Page</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.jfif" alt="Logo" class="d-inline-block align-top" style="height: 50px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="istorie.html">Istorie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Rvinicole.html">Regiuni vinicole</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="EVExport.html">Evoluția exportului</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="jumbotron jumbotron-fluid EVExport">
+        <div class="container text-center">
+            <h1 class="display-4">Evoluția exportului</h1>
+            <p class="lead">Moldova este unul din puţinii producători de vinuri din Europa, capabilă de a produce vinuri de stiluri diverse. Circa 80-90% din volumul vinului produs merge la export</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="chart">
+                    <canvas id="barChart" width="300" height="300"></canvas>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="chart">
+                    <canvas id="doughnut" width="300" height="300"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+    <script src="chart1.js"></script>
+    <script src="chart2.js"></script>
+
+</body>
+</html>

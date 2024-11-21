@@ -1,0 +1,143 @@
+
+/* Jumbotron custom styling */
+.jumbotron {
+    background: url('images/img1.jpg') no-repeat center center;
+    background-size: cover;
+    color: rgb(18, 95, 29);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Center text in the jumbotron */
+}
+
+/* Card styling */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .jumbotron {
+        height: 300px;
+    }
+    .card-img-top {
+        height: 150px;
+    }
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 400px; /* Adjust height as needed */
+    background: url('images/img1.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    filter: blur(10px); /* Adjust blur level as needed */
+    z-index: -1;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/img2.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+
+
+}
+
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+
+}
+
+.content p{
+    margin: 20px auto;
+    font-weight: 100 ;
+    line-height: 25px;
+}
+
+/* Jumbotron custom styling for 'Istorie' page */
+.Rvinicole {
+    background: url('images/img3.jpg') no-repeat center center;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Center text in the jumbotron */
+}
+
+.EVExport {
+    background: url('images/img8.jpg') no-repeat center center;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Center text in the jumbotron */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+.chart{
+    padding: 2rem;
+    border: 1px solid #f49131;
+    border-radius: 1rem;
+    background: #251c35;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.8);
+
+}
+
+body {
+    margin-bottom: 50px; /* Adjust the value as needed */
+}
+
+body.homepage {
+    margin-bottom: 0; /* No bottom margin for the homepage */
+}
